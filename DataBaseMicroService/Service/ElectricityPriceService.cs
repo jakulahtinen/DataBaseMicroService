@@ -9,9 +9,9 @@ namespace DataBaseMicroService.Service
     {
         private readonly MyDbContext _context;
 
-        public ElectricityPriceService(MyDbContext context)
+        public ElectricityPriceService()
         {
-            _context = context;
+            _context = new MyDbContext();
         }
 
         public async Task<bool> SaveAsync(ElectricityPriceDataDtoIn electricityPriceDataDtoIn)
