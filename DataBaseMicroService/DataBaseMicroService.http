@@ -1,0 +1,6 @@
+@DataBaseMicroService_HostAddress = http://localhost:5115
+
+GET {{DataBaseMicroService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
